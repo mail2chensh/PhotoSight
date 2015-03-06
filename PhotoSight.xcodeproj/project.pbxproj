@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BC428B41AA9505600B869F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC428B31AA9505600B869F7 /* Foundation.framework */; };
+		5BC428B61AA9505600B869F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC428B51AA9505600B869F7 /* CoreGraphics.framework */; };
+		5BC428B81AA9505600B869F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC428B71AA9505600B869F7 /* UIKit.framework */; };
+		5BC428BE1AA9505600B869F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BC428BC1AA9505600B869F7 /* InfoPlist.strings */; };
+		5BC428C01AA9505600B869F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC428BF1AA9505600B869F7 /* main.m */; };
+		5BC428C41AA9505600B869F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC428C31AA9505600B869F7 /* AppDelegate.m */; };
+		5BC428C61AA9505600B869F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC428C51AA9505600B869F7 /* Images.xcassets */; };
+		5BC428CD1AA9505600B869F7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC428CC1AA9505600B869F7 /* XCTest.framework */; };
+		5BC428CE1AA9505600B869F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC428B31AA9505600B869F7 /* Foundation.framework */; };
+		5BC428CF1AA9505600B869F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC428B71AA9505600B869F7 /* UIKit.framework */; };
+		5BC428D71AA9505600B869F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BC428D51AA9505600B869F7 /* InfoPlist.strings */; };
+		5BC428D91AA9505600B869F7 /* PhotoSightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC428D81AA9505600B869F7 /* PhotoSightTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BC428D01AA9505600B869F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BC428A81AA9505600B869F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BC428AF1AA9505600B869F7;
+			remoteInfo = PhotoSight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5BC428B01AA9505600B869F7 /* PhotoSight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC428B31AA9505600B869F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5BC428B51AA9505600B869F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5BC428B71AA9505600B869F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5BC428BB1AA9505600B869F7 /* PhotoSight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoSight-Info.plist"; sourceTree = "<group>"; };
+		5BC428BD1AA9505600B869F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BC428BF1AA9505600B869F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BC428C11AA9505600B869F7 /* PhotoSight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoSight-Prefix.pch"; sourceTree = "<group>"; };
+		5BC428C21AA9505600B869F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5BC428C31AA9505600B869F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5BC428C51AA9505600B869F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5BC428CB1AA9505600B869F7 /* PhotoSightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoSightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC428CC1AA9505600B869F7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5BC428D41AA9505600B869F7 /* PhotoSightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoSightTests-Info.plist"; sourceTree = "<group>"; };
+		5BC428D61AA9505600B869F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BC428D81AA9505600B869F7 /* PhotoSightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoSightTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BC428AD1AA9505600B869F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC428B61AA9505600B869F7 /* CoreGraphics.framework in Frameworks */,
+				5BC428B81AA9505600B869F7 /* UIKit.framework in Frameworks */,
+				5BC428B41AA9505600B869F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC428C81AA9505600B869F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC428CD1AA9505600B869F7 /* XCTest.framework in Frameworks */,
+				5BC428CF1AA9505600B869F7 /* UIKit.framework in Frameworks */,
+				5BC428CE1AA9505600B869F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BC428A71AA9505600B869F7 = {
+			isa = PBXGroup;
+			children = (
+				5BC428B91AA9505600B869F7 /* PhotoSight */,
+				5BC428D21AA9505600B869F7 /* PhotoSightTests */,
+				5BC428B21AA9505600B869F7 /* Frameworks */,
+				5BC428B11AA9505600B869F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BC428B11AA9505600B869F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BC428B01AA9505600B869F7 /* PhotoSight.app */,
+				5BC428CB1AA9505600B869F7 /* PhotoSightTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BC428B21AA9505600B869F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BC428B31AA9505600B869F7 /* Foundation.framework */,
+				5BC428B51AA9505600B869F7 /* CoreGraphics.framework */,
+				5BC428B71AA9505600B869F7 /* UIKit.framework */,
+				5BC428CC1AA9505600B869F7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BC428B91AA9505600B869F7 /* PhotoSight */ = {
+			isa = PBXGroup;
+			children = (
+				5BC428C21AA9505600B869F7 /* AppDelegate.h */,
+				5BC428C31AA9505600B869F7 /* AppDelegate.m */,
+				5BC428C51AA9505600B869F7 /* Images.xcassets */,
+				5BC428BA1AA9505600B869F7 /* Supporting Files */,
+			);
+			path = PhotoSight;
+			sourceTree = "<group>";
+		};
+		5BC428BA1AA9505600B869F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BC428BB1AA9505600B869F7 /* PhotoSight-Info.plist */,
+				5BC428BC1AA9505600B869F7 /* InfoPlist.strings */,
+				5BC428BF1AA9505600B869F7 /* main.m */,
+				5BC428C11AA9505600B869F7 /* PhotoSight-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BC428D21AA9505600B869F7 /* PhotoSightTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BC428D81AA9505600B869F7 /* PhotoSightTests.m */,
+				5BC428D31AA9505600B869F7 /* Supporting Files */,
+			);
+			path = PhotoSightTests;
+			sourceTree = "<group>";
+		};
+		5BC428D31AA9505600B869F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BC428D41AA9505600B869F7 /* PhotoSightTests-Info.plist */,
+				5BC428D51AA9505600B869F7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BC428AF1AA9505600B869F7 /* PhotoSight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC428DC1AA9505600B869F7 /* Build configuration list for PBXNativeTarget "PhotoSight" */;
+			buildPhases = (
+				5BC428AC1AA9505600B869F7 /* Sources */,
+				5BC428AD1AA9505600B869F7 /* Frameworks */,
+				5BC428AE1AA9505600B869F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoSight;
+			productName = PhotoSight;
+			productReference = 5BC428B01AA9505600B869F7 /* PhotoSight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BC428CA1AA9505600B869F7 /* PhotoSightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC428DF1AA9505600B869F7 /* Build configuration list for PBXNativeTarget "PhotoSightTests" */;
+			buildPhases = (
+				5BC428C71AA9505600B869F7 /* Sources */,
+				5BC428C81AA9505600B869F7 /* Frameworks */,
+				5BC428C91AA9505600B869F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BC428D11AA9505600B869F7 /* PBXTargetDependency */,
+			);
+			name = PhotoSightTests;
+			productName = PhotoSightTests;
+			productReference = 5BC428CB1AA9505600B869F7 /* PhotoSightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BC428A81AA9505600B869F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Chensh;
+				TargetAttributes = {
+					5BC428CA1AA9505600B869F7 = {
+						TestTargetID = 5BC428AF1AA9505600B869F7;
+					};
+				};
+			};
+			buildConfigurationList = 5BC428AB1AA9505600B869F7 /* Build configuration list for PBXProject "PhotoSight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5BC428A71AA9505600B869F7;
+			productRefGroup = 5BC428B11AA9505600B869F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BC428AF1AA9505600B869F7 /* PhotoSight */,
+				5BC428CA1AA9505600B869F7 /* PhotoSightTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BC428AE1AA9505600B869F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC428BE1AA9505600B869F7 /* InfoPlist.strings in Resources */,
+				5BC428C61AA9505600B869F7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC428C91AA9505600B869F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC428D71AA9505600B869F7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BC428AC1AA9505600B869F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC428C41AA9505600B869F7 /* AppDelegate.m in Sources */,
+				5BC428C01AA9505600B869F7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC428C71AA9505600B869F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC428D91AA9505600B869F7 /* PhotoSightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BC428D11AA9505600B869F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BC428AF1AA9505600B869F7 /* PhotoSight */;
+			targetProxy = 5BC428D01AA9505600B869F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BC428BC1AA9505600B869F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BC428BD1AA9505600B869F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5BC428D51AA9505600B869F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BC428D61AA9505600B869F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BC428DA1AA9505600B869F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BC428DB1AA9505600B869F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BC428DD1AA9505600B869F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoSight/PhotoSight-Prefix.pch";
+				INFOPLIST_FILE = "PhotoSight/PhotoSight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5BC428DE1AA9505600B869F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoSight/PhotoSight-Prefix.pch";
+				INFOPLIST_FILE = "PhotoSight/PhotoSight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5BC428E01AA9505600B869F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhotoSight.app/PhotoSight";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoSight/PhotoSight-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PhotoSightTests/PhotoSightTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5BC428E11AA9505600B869F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhotoSight.app/PhotoSight";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoSight/PhotoSight-Prefix.pch";
+				INFOPLIST_FILE = "PhotoSightTests/PhotoSightTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BC428AB1AA9505600B869F7 /* Build configuration list for PBXProject "PhotoSight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC428DA1AA9505600B869F7 /* Debug */,
+				5BC428DB1AA9505600B869F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BC428DC1AA9505600B869F7 /* Build configuration list for PBXNativeTarget "PhotoSight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC428DD1AA9505600B869F7 /* Debug */,
+				5BC428DE1AA9505600B869F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5BC428DF1AA9505600B869F7 /* Build configuration list for PBXNativeTarget "PhotoSightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC428E01AA9505600B869F7 /* Debug */,
+				5BC428E11AA9505600B869F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BC428A81AA9505600B869F7 /* Project object */;
+}
