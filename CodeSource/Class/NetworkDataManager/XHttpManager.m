@@ -12,6 +12,9 @@
 #import "MacroDefs.h"
 #import "URLManager.h"
 
+#import "SendImageReq.h"
+#define APIKey @"ol7umF43jePittu9IOXPOQ"
+
 
 @interface XHttpManager () <ASIHTTPRequestDelegate>
 {
@@ -45,16 +48,28 @@
 {
     _block = block;
     [object updateSetting];
+    
     ASIFormDataRequest *_formRequest = [[ASIFormDataRequest alloc] initWithURL:object.url];
     __weak ASIFormDataRequest *formRequest = _formRequest;
-        
-    if (object.dataDict != nil || object.dataDict.count != 0) {
-        for (NSString *key in object.dataDict.allKeys) {
-            [formRequest setPostValue:[URLManager encodeString:[object.dataDict objectForKey:key]] forKey:key];
-        }
-    }
+    
+    // nsdata can't be blank
+    // nsstring null
+    //
+    
+    
+    [formRequest addRequestHeader:@"Content-Type" value:@"multipart/form-data;boundary=AaB03x"];
+//    [formRequest addRequestHeader:@"Content-Type" value:@"multipart/form-data"];
+    [formRequest addRequestHeader:@"Authorization" value:[NSString stringWithFormat:@"CloudSight %@", APIKey]];
+    [formRequest setPostBody:((SendImageReq*)object).postData];
+    
+//    [formRequest setPostValue:@"zh-CN" forKey:@"image_request[language]"];
+//    [formRequest setPostValue:@"zh-CN" forKey:@"image_request[locale]"];
+//    [formRequest setPostValue:((SendImageReq*)object).image  forKey:@"image_request[image]"];
+    
     
     [formRequest setCompletionBlock:^{
+        NSLog(@"responese :%@", [formRequest responseString]);
+        
         NSData *responseData = [formRequest responseData];
         NSError *error = nil;
         NSDictionary *Dict = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];

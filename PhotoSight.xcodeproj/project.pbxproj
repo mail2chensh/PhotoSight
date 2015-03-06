@@ -34,6 +34,10 @@
 		5BC429591AA957B200B869F7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC429581AA957B200B869F7 /* SystemConfiguration.framework */; };
 		5BC4295B1AA957E000B869F7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC4295A1AA957E000B869F7 /* libz.dylib */; };
 		5BC4295D1AA957F800B869F7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC4295C1AA957F800B869F7 /* MobileCoreServices.framework */; };
+		5BC429611AA9593700B869F7 /* SendImageReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC429601AA9593700B869F7 /* SendImageReq.m */; };
+		5BC429641AA9639500B869F7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC429631AA9639500B869F7 /* MainViewController.m */; };
+		5BC429671AA963A200B869F7 /* MainRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC429661AA963A200B869F7 /* MainRootView.m */; };
+		5BC429691AA9821000B869F7 /* button_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BC429681AA9821000B869F7 /* button_add.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +95,13 @@
 		5BC429581AA957B200B869F7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5BC4295A1AA957E000B869F7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5BC4295C1AA957F800B869F7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5BC4295F1AA9593700B869F7 /* SendImageReq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendImageReq.h; sourceTree = "<group>"; };
+		5BC429601AA9593700B869F7 /* SendImageReq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendImageReq.m; sourceTree = "<group>"; };
+		5BC429621AA9639500B869F7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5BC429631AA9639500B869F7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5BC429651AA963A200B869F7 /* MainRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRootView.h; sourceTree = "<group>"; };
+		5BC429661AA963A200B869F7 /* MainRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRootView.m; sourceTree = "<group>"; };
+		5BC429681AA9821000B869F7 /* button_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_add.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +200,7 @@
 		5BC428EE1AA9510D00B869F7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				5BC429681AA9821000B869F7 /* button_add.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -196,6 +208,10 @@
 		5BC428F41AA9555B00B869F7 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5BC429621AA9639500B869F7 /* MainViewController.h */,
+				5BC429631AA9639500B869F7 /* MainViewController.m */,
+				5BC429651AA963A200B869F7 /* MainRootView.h */,
+				5BC429661AA963A200B869F7 /* MainRootView.m */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -203,6 +219,7 @@
 		5BC428F51AA9555B00B869F7 /* NetworkDataManager */ = {
 			isa = PBXGroup;
 			children = (
+				5BC4295E1AA9591A00B869F7 /* Image */,
 				5BC429101AA9555B00B869F7 /* XHttpManager.h */,
 				5BC429111AA9555B00B869F7 /* XHttpManager.m */,
 				5BC429121AA9555B00B869F7 /* XJsonObject_Req.h */,
@@ -267,6 +284,15 @@
 			path = MacroDefs;
 			sourceTree = "<group>";
 		};
+		5BC4295E1AA9591A00B869F7 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				5BC4295F1AA9593700B869F7 /* SendImageReq.h */,
+				5BC429601AA9593700B869F7 /* SendImageReq.m */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC429691AA9821000B869F7 /* button_add.png in Resources */,
 				5BC428F01AA9510D00B869F7 /* InfoPlist.strings in Resources */,
 				5BC428F11AA9510D00B869F7 /* Images.xcassets in Resources */,
 			);
@@ -333,13 +360,16 @@
 				5BC429421AA9556E00B869F7 /* ASIFormDataRequest.m in Sources */,
 				5BC429551AA9566300B869F7 /* URLManager.m in Sources */,
 				5BC428F21AA9510D00B869F7 /* main.m in Sources */,
+				5BC429641AA9639500B869F7 /* MainViewController.m in Sources */,
 				5BC429241AA9555B00B869F7 /* XJsonObject_Req.m in Sources */,
+				5BC429611AA9593700B869F7 /* SendImageReq.m in Sources */,
 				5BC429451AA9556E00B869F7 /* ASINetworkQueue.m in Sources */,
 				5BC429441AA9556E00B869F7 /* ASIInputStream.m in Sources */,
 				5BC4293F1AA9556E00B869F7 /* ASIDataCompressor.m in Sources */,
 				5BC429401AA9556E00B869F7 /* ASIDataDecompressor.m in Sources */,
 				5BC428EF1AA9510D00B869F7 /* AppDelegate.m in Sources */,
 				5BC429541AA9566300B869F7 /* UIView+Additions.m in Sources */,
+				5BC429671AA963A200B869F7 /* MainRootView.m in Sources */,
 				5BC429231AA9555B00B869F7 /* XHttpManager.m in Sources */,
 				5BC429531AA9566300B869F7 /* MacroDefs.m in Sources */,
 				5BC429431AA9556E00B869F7 /* ASIHTTPRequest.m in Sources */,
